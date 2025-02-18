@@ -10,6 +10,7 @@ export default function MemoryCard({ data,handleClick ,selectedCards,matchedCard
     ""
   return(  <li key={index} className={cardStyle}>
           <EmojiButton
+              index={index}
               handleClick={()=>handleClick(emoji.name , index)}
               emoji={emoji}
               selectedCardEntry={selectedCardEntry}
